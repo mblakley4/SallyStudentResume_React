@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student Resume</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+    function App() {
+        return (
+            <div>
+            <header> 
+                <h1>Sally Student Resume</h1>
+                <img className="portrait" src="https://kellywilliamsphotography.com/wp-content/uploads/2016/03/9-Business-3.jpg" width="200" height="200" alt="Professional headshot for Sally Student"/>
+            </header>
+            <div className="contactInfo">
+            <header>
+                <h2>Contact Infromation</h2>
+            </header>
+            <address>
+                <p>Sally Student</p>
+                <p><a href="mailto:sally.student5@gmail.com">sally.student5@gmail.com</a></p>
+                <p><a href="tel:904-665-3452">904-6653452</a></p>
+            </address>
+            </div>
+            <section>
+                <header>
+                    <h2>Education</h2>
+                </header>
+                <ul>
+                    <li>Bachelor of Science, Software Engineering</li>
+                    <li>University of North Florida, Jacksonville, Florida; 2016</li>
+                </ul>
+            </section>
+            <main>
+                <header>
+                    <h2>Experience</h2>
+                </header>
+                <section>
+                    <h3>Front End Developer,  SS&C Advent,  Jacksonville, FL<span className="smallRight">June 2017 - Present</span></h3>
+                    <p>Developing modular front-end applications using HTML5, CSS/SASS, JavaScript(ES2015+/React/Redux), JSON.</p>
+                    <ul>
+                        <li>Quantitative Success #1</li>
+                        <li>Quantitative Success #2</li>
+                        <li>Quantitative Success #3</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Web Developer,  C7 Creative,  Jacksonville, FL<span className="smallRight">June 2016 - June 2017</span></h3>
+                    <p>Design & develop websites by planning and executing design; maintaining and upgrading existing suite of website clients.</p>
+                    <ul>
+                        <li>Quantitative Success #1</li>
+                        <li>Quantitative Success #2</li>
+                        <li>Quantitative Success #3</li>
+                    </ul>
+                </section>
+            </main>
+            </div>
+        );
+    };
+
+
+    ReactDOM.render(
+        <App />,
+        document.querySelector('#application-root')
+    );
+    
+    </script>
+</body>
+</html>
